@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+.nav-links li a.active{
+    color: #5c5c5c;
+}
+.nav-links li a.active::after{
+    content: "";
+    width: 30%;
+    background: #ffffff;
+    position: absolute;
+    
+    
+}
+.container {
+
+    margin: 0 ;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #000000a1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    
+    color: #ffffff;
+    padding : 10px 10px;
+}
+
+.logo {
+    font-family: monospace;
+    text-align: center;
+    
+   
+   
+    padding-left: 200%;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    border-radius: 5%;
+}
+
+.nav-links li a:hover {
+    background-color: #3b3b3b3d;
+}
+
+
+.first{
+    background-color: rgba(50, 50, 50, 0.592);
+    flex: 1;
+    border-radius: 3%;
+    text-align: center;
+}
+.second{
+    background-color: rgba(50, 50, 50, 0.592);
+    flex: 2;
+    
+    border-radius: 3%;
+    text-align: center;
+}
+.third{
+    background-color: rgba(50, 50, 50, 0.592);
+    flex: 1;
+    border-radius: 3%;
+    text-align: center;
+
+}
+.contai{
+    display: flex;
+    column-gap: 1%;
+    height: 600px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#product1{
+    
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.club{
+    flex: 1;
+    background-color: rgba(50, 50, 50, 0.592);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.oi{
+    color: black;
+    background-color: #44444447;
+    border: #5c5c5c;
+}
+.io{
+    padding:5px 5px;
+    background-color: #44444447;
+    border: #5c5c5c;
+    color: #ffffff;
+}
+.stable{
+    padding-left: 5%;
+    padding-right: 5%;
+}

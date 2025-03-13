@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+            body{
+            background-image: url(header.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            opacity: 1;
+            font-family: Arial, sans-serif;
+            font-size: 90%;
+        }
+        body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+table { width: 100%;
+        border-collapse: collapse;}
+        th, td {
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            text-align: left; }
+        th {
+            background-color: #414141da;}
+        * { 
+            margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+.nav-links li a.active{
+    color: #5c5c5c;}
+.nav-links li a.active::after{
+    content: "";
+    width: 30%;
+    background: #ffffff;
+    position: absolute;   
+}
+.container {
+    margin: 0 ;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #000000a1;
+
+}
+header {
+    color: #ffffff;
+    
+}
+.logo {
+    font-family: monospace;
+    text-align: center;
+    padding-left: 200%;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center; 
+}
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    border-radius: 5%;
+}
+.nav-links li a:hover {
+    background-color: #3b3b3b3d;
+}
+.first{
+    background-color: rgba(50, 50, 50, 0.592);
+    flex: 1;
+    border-radius: 3%;
+    text-align: center;
+}
+.second{
+    background-color: rgba(50, 50, 50, 0.592);
+    flex: 2;
+    border-radius: 3%;
+    text-align: center;
+}
+.third{
+    background-color: rgba(50, 50, 50, 0.592);
+    flex: 1;
+    border-radius: 3%;
+    text-align: center;
+}
+.contai{
+    display: flex;
+    column-gap: 1%;
+    height: 600px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Times New Roman', Times, serif;
+}
+#product1{
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.club{
+    flex: 1;
+    background-color: rgba(50, 50, 50, 0.592);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.oi{
+    color: black;
+    background-color: #44444447;
+    border: #5c5c5c;
+}
+.io{
+    padding:5px 5px;
+    background-color: #44444447;
+    border: #5c5c5c;
+    color: #ffffff;
+}
+.stable{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+
+
+.vase a{
+    text-decoration: none;
+}
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+#product1{
+    text-align: center;
+}
+#product1 .pros{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+   border: 1px solid #33333317;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 30px 30px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    text-decoration: none;
+
+}
+#product1 .pros img{
+    width: 100%;
+    border-radius:20px ;
+}
+#product1 .pros .des{
+text-align: start;
+padding: 10px 0;
+
+}
+#product .pros .des span{
+    color: #606063;
+    font-size: 12px;
+    text-decoration: none;
+}
+#product1 .pros .des h3{
+    padding-top: 7px;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+#product1 .pros .des h4{
+    color: #4a4a4a;
+}
+#product1 .pros:hover{
+    box-shadow: 30px 30px 30px rgba(0,0,0,0.06);
+}
+.des{
+    font-family: Arial;
+}
+#sc{
+    padding-left: 80%;
+    
+}
+.stars{
+    color:rgb(255, 213, 0);
+}
+#product1 .procon{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v143/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <br>
+                <a href="index.html"class="logo"alt=""><img src="logo1.png" width="250px" length="400px" style="transform: translateX(250%);padding-top: 1%;"></a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="login.html" ><b>LOGIN</b></a></li>
+                        <li><a href="merch.html" class="active"><b>MERCH</b></a></li>
+                        <li><a href="webpage.html"><b>PARTNERSHIP WITH F1</b></a></li>
+                        
+                        <li><a href="contact.html"><b>CONTACT US</b></a></li>
+                        <br><br>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </header>
+        
+       
+        
+        
+
+
+        <section id="product1"class="section1">
+            
+            
+
+            
+            <div class="procon">
+                
+                <div class="pros">
+                <img src="s3.jpg" alt="">
+                <div class="des">
+                   
+                    <h3 style="padding-left: 5%;">HOODIE</h3>
+                    <h4 style="padding-left: 5%;">Rs.3000</h4>
+                        <div class="stars" style="padding-left: 5%;">
+                            <span class="material-icons">
+                                star
+                                </span>
+                                <span class="material-icons">
+                                    star
+                                    </span>
+                                    <span class="material-icons">
+                                        star
+                                        </span>
+                                        <span class="material-icons">
+                                            star
+                                            </span>
+                                            <span class="material-icons">
+                                                star
+                                                </span>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+               
+                
+
+
+
+                <div class="pros">
+                    <img src="s1.png" alt="">
+                    <div class="des">
+                       
+                        <h3 style="padding-left: 5%;">T-SHIRT</h3>
+                        <h4 style="padding-left: 5%;">Rs.1000</h4>
+                            <div class="stars" style="padding-left: 5%;">
+                                <span class="material-icons">
+                                    star
+                                    </span>
+                                    <span class="material-icons">
+                                        star
+                                        </span>
+                                        <span class="material-icons">
+                                            star
+                                            </span>
+                                            <span class="material-icons">
+                                                star
+                                                </span>
+                                                <span class="material-icons">
+                                                    star
+                                                    </span>
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+              
+
+
+
+
+              
+                    <div class="pros">
+                        <img src="s2.jpg" alt="">
+                        <div class="des">
+                           
+                            <h3 style="padding-left: 5%;">CAP</h3>
+                            <h4 style="padding-left: 5%;">Rs.2000</h4>
+                                <div class="stars" style="padding-left: 5%;">
+                                    <span class="material-icons">
+                                        star
+                                        </span>
+                                        <span class="material-icons">
+                                            star
+                                            </span>
+                                            <span class="material-icons">
+                                                star
+                                                </span>
+                                                <span class="material-icons">
+                                                    star
+                                                    </span>
+                                                    <span class="material-icons">
+                                                        star
+                                                        </span>
+                                </div>
+                            
+                            </div>
+                            
+                        </div>
+                
+
+
+
+
+               
+                        <div class="pros">
+                            <img src="a.jpg" alt="">
+                            <div class="des">
+                               
+                                <h3 style="padding-left: 5%;">POSTER</h3>
+                                <h4 style="padding-left: 5%;">Rs.700</h4>
+                                    <div class="stars" style="padding-left: 5%;">
+                                        <span class="material-icons">
+                                            star
+                                            </span>
+                                            <span class="material-icons">
+                                                star
+                                                </span>
+                                                <span class="material-icons">
+                                                    star
+                                                    </span>
+                                                    <span class="material-icons">
+                                                        star
+                                                        </span>
+                                                        <span class="material-icons">
+                                                            star
+                                                            </span>
+                                    </div>
+                                
+                                </div>
+                                
+                            </div>
+
+
+
+
+
+
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                                            
+            </div>
+        </section>
+    
+        </body>
+        <br><br><br>
+         <footer style="text-align: center;background-color: rgb(45, 44, 44);padding: 30px 30px;font-family: 'Times New Roman', Times, serif;" >
+          INSTAGRAM-THESMITHS 
+         </footer>
+    </body>
+</html>

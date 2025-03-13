@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1,
+                   shrink-to-fit=no" />
+    <link rel="stylesheet"
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Sign up</title>
+    <script>
+       function formValidation() {
+    let name = document.forms["form2"]["nam"].value;
+    let email = document.forms["form2"]["email"].value;
+    let password = document.forms["form2"]["password"].value;
+
+    if (name.trim() === "") {
+        alert("Name field must be filled out!");
+        return false;
+    }
+    if (email.trim() === "") {
+        alert("Email field must be filled out!");
+        return false;
+    }
+    if (password.trim() === "") {
+        alert("Password field must be filled out!");
+        return false;
+    }
+    return true; 
+}
+
+    </script>
+</head>
+<style>
+body{
+        background-image: url('bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        height: 600px;
+        color: white;
+    }
+    .card{
+        background-color: rgba(54, 54, 54, 0.351);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+    .poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+</style>
+<body>
+   
+    
+    <div class="background">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form name="form2" method="POST" action="signup.php" onsubmit="return formValidation()">
+                            <br>
+                            <div class="form-group">
+                                <h1 class=".poppins-medium" style="font-family: 'poppins', Times, serif;">
+                                    SIGN UP PAGE
+                                </h1><br>
+                                <label for="name">
+                                    NAME
+                                </label>
+                                <input type="text"
+                                       class="form-control"
+                                       name="nam"
+                                       placeholder="Name"  >
+                            </div>
+                            <div class="form-group">
+                                <label for="password">
+                                    PASSWORD
+                                </label>
+                                <input type="password"
+                                       class="form-control"
+                                       name="password"
+                                       placeholder="Password" >
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    EMAIL
+                                </label>
+                                <input type="email"
+                                       class="form-control"
+                                       name="email"
+                                       placeholder="Email" >
+                            </div>
+                            <button class="btn btn-danger">
+                                Sign Up
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

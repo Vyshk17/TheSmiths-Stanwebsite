@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F1 Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        table, th, td {
+            border: 2px solid black !important;
+            text-align: center;
+        }
+        .carousel-inner{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Formula 1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Drivers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Races</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="carouselExample" class="carousel slide bordered" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpeg" class="d-block w-100" alt="F1 Car 1" style>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpeg" class="d-block w-100" alt="F1 Car 2">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpeg" class="d-block w-100" alt="F1 Car 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    
+    <div class="container text-center mt-5 bordered">
+        <h1>Welcome to the World of Formula 1</h1>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 bordered">
+                <h3>Top Drivers</h3>
+                <p>Learn about the best drivers in Formula 1 history.</p>
+                <ul>
+                    <li>Max Verstappen</li>
+                    <li>Lewis Hamilton</li>
+                    <li>Charles Leclerc</li>
+                    <li>Fernando Alonso</li>
+                </ul>
+            </div>
+            <div class="col-md-4 bordered">
+                <h3>F1 Teams</h3>
+                <p>Discover legendary F1 teams and their achievements.</p>
+                <ul>
+                    <li>Red Bull Racing</li>
+                    <li>Mercedes-AMG Petronas</li>
+                    <li>Ferrari</li>
+                    <li>McLaren</li>
+                </ul>
+            </div>
+            <div class="col-md-4 bordered">
+                <h3>Upcoming Races</h3>
+                <p>Stay updated on the latest race schedules and locations.</p>
+                <ul>
+                    <li>Monaco Grand Prix - May 26</li>
+                    <li>British Grand Prix - July 7</li>
+                    <li>Italian Grand Prix - September 8</li>
+                    <li>Abu Dhabi Grand Prix - December 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-5 bordered">
+        <h2 class="text-center">F1 Standings</h2>
+        <table class="table table-striped bordered">
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Driver</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Max Verstappen</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lewis Hamilton</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Charles Leclerc</td>
+                    <td>320</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sergio Perez</td>
+                    <td>290</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
